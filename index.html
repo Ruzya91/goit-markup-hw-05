@@ -451,27 +451,31 @@
             </li>
           </ul>
         </div>
-        <div class="footer-container">
-          <div class="subscribe">
-            <label class="subscribe-text" for="email">Subscribe</label>
-            <input
-              class="subscribe-email"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-            />
-          </div>
-          <button class="button button-footer" type="submit">
-            <span class="text-button">Subscribe</span>
-            <svg class="button-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-plane"></use>
-            </svg>
-          </button>
+
+        <div class="subscribe">
+          <p class="subscribe-paragraf">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-text" for="email">
+              <input
+                class="subscribe-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="button-footer" type="submit">
+              <span class="text-button">Subscribe</span>
+              <svg class="button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg class="modal-icon-hover" width="8" height="8">
@@ -558,6 +562,6 @@
         </div>
         <button class="button modal-submit" type="submit">Send</button>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
