@@ -550,14 +550,15 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: solid rgba(46, 47, 66, 0.4);
 }
 .modal-caption {
   width: 360px;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
   top: 72px;
   margin-bottom: 16px;
 }
@@ -582,12 +583,13 @@ img {
   height: 40px;
   padding: 11px 38px;
   border-radius: 4px;
-  border: solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
 }
 .modal-form-input.textarea {
   resize: none;
 }
+
 .modal-form-input:focus {
   border: solid #4d5ae5;
 }
@@ -597,6 +599,13 @@ img {
   left: 16px;
   transform: translateY(-50%);
   pointer-events: none;
+  fill: #2e2f42;
+  width: 18px;
+  height: 24px;
+}
+.modal-form-icon:hover,
+.modal-form-icon:focus {
+  background-color: #4d5ae5;
 }
 
 .checkbox {
@@ -614,4 +623,8 @@ img {
 .modal-submit {
   align-items: center;
   display: flex;
+}
+
+textarea::placeholder {
+  color: #434455;
 }
